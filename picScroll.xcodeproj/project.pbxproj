@@ -15,6 +15,7 @@
 		627C145026601F42006B0459 /* PictureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C144F26601F42006B0459 /* PictureTableViewController.swift */; };
 		627C145226601FE4006B0459 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C145126601FE4006B0459 /* Photo.swift */; };
 		627C14542660225B006B0459 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C14532660225B006B0459 /* PhotoTableViewCell.swift */; };
+		627C1456266026D8006B0459 /* BlownUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C1455266026D8006B0459 /* BlownUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		627C144F26601F42006B0459 /* PictureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewController.swift; sourceTree = "<group>"; };
 		627C145126601FE4006B0459 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		627C14532660225B006B0459 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		627C1455266026D8006B0459 /* BlownUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlownUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				627C145126601FE4006B0459 /* Photo.swift */,
 				627C14532660225B006B0459 /* PhotoTableViewCell.swift */,
 				627C144F26601F42006B0459 /* PictureTableViewController.swift */,
+				627C1455266026D8006B0459 /* BlownUpViewController.swift */,
 				627C144126601E34006B0459 /* Main.storyboard */,
 				627C144426601E38006B0459 /* Assets.xcassets */,
 				627C144626601E38006B0459 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627C1456266026D8006B0459 /* BlownUpViewController.swift in Sources */,
 				627C14542660225B006B0459 /* PhotoTableViewCell.swift in Sources */,
 				627C145226601FE4006B0459 /* Photo.swift in Sources */,
 				627C143C26601E34006B0459 /* AppDelegate.swift in Sources */,

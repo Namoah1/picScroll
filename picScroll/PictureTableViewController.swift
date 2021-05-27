@@ -33,7 +33,17 @@ class PictureTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Hi")
+        
+        let selectedPhoto = photos[indexPath.row]
+        performSegue(withIdentifier: "BlowUpSegue", sender: selectedPhoto)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let blownUpVC = segue.destination as? BlownUpViewController{
+            if let selectedPhoto = sender as? Photo {
+                blownUpVC.photo = selectedPhoto
+            }
+        }
     }
     
 

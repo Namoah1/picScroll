@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,10 +47,44 @@
                     <navigationItem key="navigationItem" title="City Scroll" id="zOQ-D5-gUM">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Voy-5V-ozX"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="V3Y-Bz-7Lu" kind="presentation" identifier="BlowUpSegue" id="nQY-Tk-ccp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u08-Uj-TS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="67.633928571428569"/>
+        </scene>
+        <!--Blown Up View Controller-->
+        <scene sceneID="Zq7-cZ-GeD">
+            <objects>
+                <viewController id="V3Y-Bz-7Lu" customClass="BlownUpViewController" customModule="picScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJ0-L5-XEY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hUj-du-bqc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="6zL-rm-T8v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hUj-du-bqc" firstAttribute="top" secondItem="yJ0-L5-XEY" secondAttribute="top" id="1xA-CZ-Chx"/>
+                            <constraint firstItem="hUj-du-bqc" firstAttribute="trailing" secondItem="BFi-tO-gI2" secondAttribute="trailing" id="ugb-cr-kVT"/>
+                            <constraint firstItem="hUj-du-bqc" firstAttribute="leading" secondItem="BFi-tO-gI2" secondAttribute="leading" id="zil-hy-8OU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BFi-tO-gI2"/>
+                    </view>
+                    <connections>
+                        <outlet property="blownUpImageView" destination="hUj-du-bqc" id="J3B-fV-ahI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyP-6r-YFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915.9420289855075" y="71.651785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bi5-9B-yOK">
