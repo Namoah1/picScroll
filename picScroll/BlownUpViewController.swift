@@ -11,13 +11,16 @@ import UIKit
 class BlownUpViewController: UIViewController {
     
     @IBOutlet weak var blownUpImageView: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
     
     var photo = Photo()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         blownUpImageView.image = UIImage(named: photo.image)
+        infoLabel.text = photo.info
         
     }
     
